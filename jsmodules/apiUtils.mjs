@@ -29,6 +29,9 @@ export async function performApiRequest(url, method, accessToken = null, body = 
             const errorText = await response.text();
             throw new Error(`HTTP error! status: ${response.status} - ${errorText}`);
         }
+        if (response.status === 204) {
+            return null;
+        }
 
         return await response.json();
     } catch (error) {
