@@ -1,6 +1,10 @@
 import { postData } from '../jsmodules/apiUtils.mjs';
+import { hamburgerMenuFunction } from './jsmodules/hamburgerMenu.mjs';
+import { logout } from './jsmodules/logout.mjs';
 
 document.addEventListener('DOMContentLoaded', function() {
+    hamburgerMenuFunction();
+    logout();
     const registerForm = document.getElementById('registerForm');
 
     registerForm.addEventListener('submit', async function(event) {

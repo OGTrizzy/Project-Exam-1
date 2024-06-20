@@ -1,6 +1,10 @@
 import { getData, updateData, deleteData } from '../jsmodules/apiUtils.mjs';
+import { hamburgerMenuFunction } from './jsmodules/hamburgerMenu.mjs';
+import { logout } from './jsmodules/logout.mjs';
 
 document.addEventListener('DOMContentLoaded', async function() {
+    hamburgerMenuFunction();
+    logout();
     const postId = new URLSearchParams(window.location.search).get('id');
     const accessToken = localStorage.getItem('accessToken');
 

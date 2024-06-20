@@ -1,6 +1,10 @@
 import { fetchPostData } from './apiUtils.mjs';
+import { hamburgerMenuFunction } from './jsmodules/hamburgerMenu.mjs';
+import { logout } from './jsmodules/logout.mjs';
 
 document.addEventListener('DOMContentLoaded', async () => {
+    hamburgerMenuFunction();
+    logout();
     const postId = getPostIdFromURL();
     try {
         const postData = await fetchPostData(postId);

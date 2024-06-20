@@ -1,6 +1,10 @@
 import { getData } from './jsmodules/apiUtils.mjs';
+import { hamburgerMenuFunction } from './jsmodules/hamburgerMenu.mjs';
+import { logout } from './jsmodules/logout.mjs';
 
 document.addEventListener("DOMContentLoaded", async function() {
+    hamburgerMenuFunction();
+    logout();
     const user = 'Tristian';
     const accessToken = localStorage.getItem('accessToken');
     const url = `https://v2.api.noroff.dev/blog/posts/${user}`;
@@ -47,11 +51,6 @@ document.addEventListener("DOMContentLoaded", async function() {
         console.error('Error:', error);
         alert('Failed to load posts');
     }
-});
-
-document.getElementById('menu').addEventListener('click', function() {
-    var nav = document.getElementById('nav');
-    nav.classList.toggle('show');
 });
 
 let slideIndex = 0;

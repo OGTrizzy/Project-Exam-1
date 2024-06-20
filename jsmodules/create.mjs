@@ -1,4 +1,11 @@
 import { postData } from '../jsmodules/apiUtils.mjs';
+import { hamburgerMenuFunction } from './jsmodules/hamburgerMenu.mjs';
+import { logout } from './jsmodules/logout.mjs';
+
+document.addEventListener('DOMContentLoaded', function(){
+    hamburgerMenuFunction();
+    logout();
+});
 
 document.getElementById('create-form').addEventListener('submit', async function(event) {
     event.preventDefault();

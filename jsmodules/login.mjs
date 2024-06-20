@@ -1,6 +1,8 @@
 import { postData } from '../jsmodules/apiUtils.mjs';
+import { hamburgerMenuFunction } from './jsmodules/hamburgerMenu.mjs';
 
 document.addEventListener('DOMContentLoaded', function() {
+    hamburgerMenuFunction();
     const loginForm = document.getElementById('loginForm');
 
     loginForm.addEventListener('submit', async function(event) {
