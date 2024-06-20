@@ -1,6 +1,6 @@
-import { postData } from '../jsmodules/apiUtils.mjs';
-import { hamburgerMenuFunction } from './jsmodules/hamburgerMenu.mjs';
-import { logout } from './jsmodules/logout.mjs';
+import { postData } from './apiUtils.mjs';
+import { hamburgerMenuFunction } from './hamburgerMenu.mjs';
+import { logout } from './logout.mjs';
 
 document.addEventListener('DOMContentLoaded', function() {
     hamburgerMenuFunction();

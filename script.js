@@ -81,10 +81,3 @@ document.getElementById('back').addEventListener('click', function() {
     }
     showSlide(slideIndex);
 });
-
-document.getElementById('logout').addEventListener('click', function() {
-    localStorage.removeItem('accessToken');
-    localStorage.removeItem('email');
-    localStorage.removeItem('name');
-    alert('logged out');
-});

@@ -1,36 +1,36 @@
-import { postData } from '../jsmodules/apiUtils.mjs';
-import { hamburgerMenuFunction } from './jsmodules/hamburgerMenu.mjs';
-import { logout } from './jsmodules/logout.mjs';
+import { postData } from './apiUtils.mjs';
+import { hamburgerMenuFunction } from './hamburgerMenu.mjs';
+import { logout } from './logout.mjs';
 
 document.addEventListener('DOMContentLoaded', function(){
     hamburgerMenuFunction();
     logout();
-});
 
-document.getElementById('create-form').addEventListener('submit', async function(event) {
-    event.preventDefault();
+    document.getElementById('create-form').addEventListener('submit', async function(event) {
+        event.preventDefault();
 
-    const title = document.getElementById('create-title').value;
-    const body = document.getElementById('create-postText').value;
-    const mediaUrl = document.getElementById('create-url').value;
-    const mediaAlt = document.getElementById('create-alt').value;
-    const accessToken = localStorage.getItem('accessToken');
+        const title = document.getElementById('create-title').value;
+        const body = document.getElementById('create-postText').value;
+        const mediaUrl = document.getElementById('create-url').value;
+        const mediaAlt = document.getElementById('create-alt').value;
+        const accessToken = localStorage.getItem('accessToken');
 
-    const postBody = {
-        title,
-        body,
-        media: {
-            url: mediaUrl,
-            alt: mediaAlt
+        const postBody = {
+            title,
+            body,
+            media: {
+                url: mediaUrl,
+                alt: mediaAlt
+            }
+        };
+
+        try {
+            await postData('Tristian', postBody, accessToken);
+            alert('Post created successfully!');
+            window.location.href = '../index.html';
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Failed to create post');
         }
-    };
-
-    try {
-        await postData('Tristian', postBody, accessToken);
-        alert('Post created successfully!');
-        window.location.href = '../index.html';
-    } catch (error) {
-        console.error('Error:', error);
-        alert('Failed to create post');
-    }
+    });
 });
