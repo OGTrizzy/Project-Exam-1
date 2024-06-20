@@ -1,0 +1,316 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #E0FBFC;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #0B132B;
+    color: #E0FBFC;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: #E0FBFC;
+    padding-right: 15px;
+}
+
+h1:hover {
+    color: #C2DFE3;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav a {
+    background-color: #E0FBFC;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.nav a:hover {
+    background-color: #C2DFE3;
+}
+
+.menu {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #E0FBFC;
+    font-size: 1.5rem;
+    z-index: 10;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: 20px;
+    background-color: #0B132B;
+    color: #E0FBFC;
+    padding: 10px;
+}
+
+.create-container, .edit-container, .post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.create-inputs, .edit-inputs, .post-input {
+    display: flex;
+    justify-content: column;
+    width: 100%;
+}
+
+.create-left-side, .create-right-side, .edit-left-side, .edit-right-side, .post-left-side, .post-right-side {
+    width: 100%;
+}
+
+#create-postText, #edit-postText, #post-postText {
+    width: 100%;
+    height: 300px;
+}
+
+.create-container input, .create-container textarea, .edit-container input, .edit-container textarea, .post-container input, .post-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+}
+
+.login-container, .register-container, .create-container, .edit-container, .post-container {
+    background-color: #3A506B;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.login-container h2, .register-container h2, .create-container h2, .edit-container h2, .post-container h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.login-container input, .register-container input, .create-container input, .edit-container input, .post-container input {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.create-container input, .edit-container input, .post-container input {
+    float: left;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.login-btn, .register-btn, .create-btn, .edit-btn, .post-btn {
+    background-color: #E0FBFC;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.login-btn:hover, .register-btn:hover, .create-btn:hover, .edit-btn:hover, .post-btn:hover {
+    background-color: #C2DFE3;
+    color: #0B132B;
+}
+
+.container {
+    min-width: 50%;
+    min-height: 500px;
+    max-width: 50%;
+    max-height: 100%;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.carousel button {
+    position: absolute;
+    top: 25%;
+    width: 10%;
+    height: 15%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    background-color: rgba(222, 222, 222, 0.5); 
+    border-radius: 50px;
+}
+
+#back {
+    left: 15%;
+}
+
+#next {
+    right: 15%;
+}
+
+.grid-container {
+    display: grid;
+    width: 90vw;
+    margin-top: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #3A506B;
+    border-radius: 8px;
+}
+
+.post img, .post-left-side img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.post h2 {
+    margin-top: 10px;
+    color: #E0FBFC;
+    text-align: center;
+}
+
+.white{
+    color: #E0FBFC;
+    display: inline-block;
+    text-align: start;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+@media screen and (max-width: 555px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 25%;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        background-color: #E0FBFC;
+        text-align: center;
+        z-index: 100;
+    }
+
+    .nav a {
+        margin: 5px;
+    }
+
+    .nav.show {
+        display: flex;
+        background-color: #0B132B;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    #back {
+        left: 25px;
+    }
+
+    #next {
+        right: 25px;
+    }
+
+    .login-container, .register-container {
+        width: 200px;
+        max-width: 200px;
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+    .button-group {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .button-group button, .button-group a {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .create-inputs, .edit-inputs, .post-inputs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .create-left-side, .create-right-side, .edit-left-side, .edit-right-side, .post-left-side, .post-right-side {
+        min-width: 100%;
+    }
+
+    .white{
+        font-size:75%;
+    }
+}

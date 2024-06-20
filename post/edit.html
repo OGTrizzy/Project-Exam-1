@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="homepage">
+    <link rel="stylesheet" href="../stylesheet.css">
+    <script type="module" src="../jsmodules/edit.mjs"></script>
+    <title>FOODIE</title>
+</head>
+<body>
+    <div class="header">
+        <a href="../index.html"><h1>FOODIE</h1></a>
+        <div class="nav" id="nav">
+            <a href="../index.html">Home</a>
+            <a href="../account/login.html">Login</a>
+            <a href="../account/register.html">Register</a>
+            <a href="../post/create.html">Create</a>
+        </div>
+        <button class="menu" id="menu"> &#9776;</button>
+    </div>
+
+<div class="wrapper">
+    <div class="container edit-container">
+        <h2>Edit Post</h2>
+        <form id="edit-form">
+            <div class="edit-inputs">
+                <div class="edit-left-side">
+                    <input type="text" id="edit-url" placeholder="Image URL*" required>
+                    <input type="text" id="edit-alt" placeholder="Image ALT*" required>
+                    <input type="text" id="edit-title" placeholder="Title*" required>
+                </div>
+                <div class="edit-right-side">
+                    <textarea id="edit-postText" placeholder="Post text*"></textarea>
+                </div>
+            </div>
+            <div class="edit-button-group">
+                <button type="submit" class="edit-btn">Update</button>
+                <button type="button" id="delete-button" class="edit-btn">Delete</button>
+            </div>
+        </form>
+    </div>   
+</div>
+
+
+    <div class="footer">
+        <p>© Foodie Inc. All rights reserved.</p>
+    </div>
+</body>
+</html>

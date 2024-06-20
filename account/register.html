@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="homepage">
+    <link rel="stylesheet" href="../stylesheet.css">
+    <script type="module" src="../jsmodules/register.mjs"></script>
+    <title>FOODIE</title>
+</head>
+<body>
+    <div class="header">
+        <a href="../index.html"><h1>FOODIE</h1></a>
+        <div class="nav" id="nav">
+            <a href="../index.html">Home</a>
+            <a href="../account/login.html">Login</a>
+            <a href="../account/register.html">Register</a>
+            <a href="../post/create.html">Create</a>
+        </div>
+        <button class="menu" id="menu"> &#9776;</button>
+    </div>
+    <div class="wrapper">
+        <div class="container register-container">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="text" id="name" placeholder="Name*" required>
+                <input type="email" id="email" placeholder="Email*" required>
+                <input type="password" id="password" placeholder="Password*" required minlength="8">
+                <div class="button-group">
+                    <button type="submit" class="register-btn">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© Foodie Inc. All rights reserved.</p>
+    </div>
+</body>
+</html>

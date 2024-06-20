@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="homepage">
+    <link rel="stylesheet" href="../stylesheet.css">
+    <script type="module" src="../jsmodules/create.mjs"></script>
+    <title>FOODIE</title>
+</head>
+<body>
+    <div class="header">
+        <a href="../index.html"><h1>FOODIE</h1></a>
+        <div class="nav" id="nav">
+            <a href="../index.html">Home</a>
+            <a href="../account/login.html">Login</a>
+            <a href="../account/register.html">Register</a>
+            <a href="../post/create.html">Create</a>
+        </div>
+        <button class="menu" id="menu"> &#9776;</button>
+    </div>
+
+    <div class="wrapper">
+        <div class="container create-container">
+            <h2>Create Post</h2>
+            <form id="create-form">
+                <div class="create-inputs">
+                    <div class="create-left-side">
+                        <input type="text" id="create-url" placeholder="Image URL*" required>
+                        <input type="text" id="create-alt" placeholder="Image ALT*" required>
+                        <input type="text" id="create-title" placeholder="Title*" required>
+                    </div>
+                    <div class="create-right-side">
+                        <textarea id="create-postText" placeholder="Post text*"></textarea>
+                    </div>
+                </div>
+                <div class="create-button-group">
+                    <button type="submit" class="create-btn">Publish</button>
+                </div>
+            </form>
+        </div>   
+    </div>
+
+    <div class="footer">
+        <p>© Foodie Inc. All rights reserved.</p>
+    </div>
+</body>
+</html>
