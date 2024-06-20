@@ -1,4 +1,4 @@
-import { getData } from '../jsmodules/apiUtils.mjs';
+import { getData } from 'jsmodules/apiUtils.mjs';
 
 document.addEventListener("DOMContentLoaded", async function() {
     const user = 'Tristian';
