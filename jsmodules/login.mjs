@@ -1,5 +1,5 @@
 import { postData } from './apiUtils.mjs';
-import { hamburgerMenuFunction } from '/hamburgerMenu.mjs';
+import { hamburgerMenuFunction } from './hamburgerMenu.mjs';
 
 document.addEventListener('DOMContentLoaded', function() {
     hamburgerMenuFunction();
