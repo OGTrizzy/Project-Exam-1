@@ -1,5 +1,8 @@
 # Project-Exam-1
 
+![foodiebilde](https://github.com/OGTrizzy/Project-Exam-1/assets/142795941/9a3f2c17-08d0-4670-bc57-0cbbe81d09fb)
+
+
 ## Description
 
 this project was for everything i learned trough first and 2nd semester, and put to the test on how well i could get it done.
