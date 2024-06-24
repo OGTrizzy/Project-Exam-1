@@ -7,6 +7,10 @@
 
 this project was for everything i learned trough first and 2nd semester, and put to the test on how well i could get it done.
 
+## Features
+- Responsive design: the website are made so that it works with most of screen type/sizes
+- Dynamic blog post page: each blog page contains only with the info about the specific blog
+
 ## Getting Started
 
 ### Installing
