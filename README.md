@@ -18,6 +18,7 @@ this project was for everything i learned trough first and 2nd semester, and put
 1. Clone the repo:
 
   this repository should be open, so cloning should be not a issue
+  click on the big green button that says code, then click on "open with github desktop" when that app starts then you can click open with VSC (visual studio code)
 
 2. Do your thing:
 
